@@ -1,0 +1,113 @@
+! name: Blogs independientes (plataformas + fediverso)
+! description: Sube blogs alojados en plataformas populares, web pequena y fediverso; descarta redes sociales.
+! public: false
+! author: TU_NOMBRE
+!
+! MODO SOLO-ESTOS-SITIOS: quita el "!" de la linea siguiente para mostrar UNICAMENTE
+! resultados de los dominios listados abajo. Ojo: se pierden los blogs con dominio propio
+! (WordPress autoalojado, Ghost, Hugo, etc.), que son la mayoria de los blogs independientes.
+! $discard
+!
+! ---------- 1. Plataformas generalistas ----------
+$boost=3,site=blogspot.com
+$boost=3,site=wordpress.com
+$boost=3,site=tumblr.com
+$boost=3,site=medium.com
+$boost=3,site=substack.com
+$boost=3,site=wixsite.com
+$boost=3,site=weebly.com
+$boost=3,site=jimdofree.com
+$boost=3,site=jimdosite.com
+$boost=3,site=webnode.es
+$boost=3,site=webnode.com
+$boost=3,site=squarespace.com
+!
+! ---------- 2. Blogspot con dominio de pais ----------
+$boost=3,site=blogspot.com.es
+$boost=3,site=blogspot.com.ar
+$boost=3,site=blogspot.mx
+$boost=3,site=blogspot.cl
+$boost=3,site=blogspot.com.co
+$boost=3,site=blogspot.pe
+$boost=3,site=blogspot.com.uy
+!
+! ---------- 3. Mas plataformas y diarios en linea ----------
+$boost=3,site=typepad.com
+$boost=3,site=livejournal.com
+$boost=3,site=dreamwidth.org
+$boost=3,site=edublogs.org
+$boost=3,site=over-blog.es
+$boost=3,site=over-blog.com
+$boost=3,site=blogia.com
+$boost=3,site=home.blog
+$boost=3,site=mystrikingly.com
+$boost=3,site=site123.me
+$boost=3,site=ghost.io
+$boost=3,site=hashnode.dev
+!
+! Dominio .blog completo (sintaxis de TLD como el ejemplo ".edu" de Brave; no verificado)
+$boost=3,site=.blog
+!
+! ---------- 4. Newsletters y blogs de nicho ----------
+$boost=3,site=dev.to
+$boost=3,site=notion.site
+$boost=3,site=beehiiv.com
+$boost=3,site=buttondown.com
+$boost=3,site=svbtle.com
+$boost=3,site=cargo.site
+$boost=3,site=carrd.co
+$boost=3,site=webflow.io
+$boost=3,site=myportfolio.com
+$boost=3,site=telegra.ph
+$boost=3,site=world.hey.com
+!
+! ---------- 5. Indie y web pequena ----------
+$boost=5,site=bearblog.dev
+$boost=5,site=micro.blog
+$boost=5,site=mataroa.blog
+$boost=5,site=prose.sh
+$boost=5,site=weblog.lol
+$boost=5,site=omg.lol
+$boost=5,site=neocities.org
+$boost=5,site=nekoweb.org
+$boost=5,site=smol.pub
+$boost=5,site=pika.page
+$boost=5,site=blot.im
+!
+! ---------- 6. Hosting estatico y tildes ----------
+$boost=3,site=github.io
+$boost=3,site=gitlab.io
+$boost=3,site=codeberg.page
+$boost=3,site=srht.site
+$boost=3,site=netlify.app
+$boost=3,site=pages.dev
+$boost=3,site=vercel.app
+$boost=3,site=surge.sh
+$boost=5,site=tilde.town
+$boost=5,site=tilde.club
+$boost=5,site=tilde.team
+!
+! ---------- 7. Fediverso ----------
+! WriteFreely
+$boost=5,site=write.as
+$boost=5,site=writing.exchange
+$boost=5,site=qua.name
+$boost=5,site=wordsmith.social
+$boost=5,site=log.rocks
+$boost=5,site=nogafam.es
+! Plume (proyecto sin mantenimiento; muchas instancias caidas)
+$boost=3,site=fediverse.blog
+$boost=3,site=plume.nixnet.xyz
+$boost=3,site=lorem.club
+$boost=3,site=blog.antopie.org
+!
+! ---------- Redes sociales (descartadas) ----------
+$discard,site=instagram.com
+$discard,site=facebook.com
+$discard,site=tiktok.com
+$discard,site=pinterest.com
+$discard,site=x.com
+$discard,site=twitter.com
+$discard,site=threads.net
+$discard,site=linkedin.com
+$discard,site=quora.com
