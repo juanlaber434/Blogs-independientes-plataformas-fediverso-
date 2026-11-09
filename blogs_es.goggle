@@ -1,7 +1,7 @@
 ! name: Blogs independientes (plataformas + fediverso)
 ! description: Sube blogs alojados en plataformas populares, web pequena y fediverso; descarta redes sociales.
 ! public: false
-! author: TU_NOMBRE
+! author: juanlaber434
 !
 ! MODO SOLO-ESTOS-SITIOS: quita el "!" de la linea siguiente para mostrar UNICAMENTE
 ! resultados de los dominios listados abajo. Ojo: se pierden los blogs con dominio propio
